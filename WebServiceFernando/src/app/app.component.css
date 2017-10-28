@@ -1,0 +1,11 @@
+.coloreslista{
+    background-color:orange;
+    color:black;
+}
+.btn{
+    padding: 20px;
+    color: white;
+    background-color: green;
+    display: block;
+    margin: 3px;
+}
