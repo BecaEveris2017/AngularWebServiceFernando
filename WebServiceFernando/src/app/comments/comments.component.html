@@ -1,7 +1,7 @@
 <h1>Comments</h1>
 
 <div *ngFor="let comment of comments" class="Comments">
-  <app-spinner [threshold]="2000" [template]="template" [loadingText]="'Please wait...'">  </app-spinner>
+  <!--<app-spinner [threshold]="2000" [template]="template" [loadingText]="'Please wait...'">  </app-spinner>-->
    <h1>CommentID: {{comment.postId}}</h1>
     <h2>Id: {{comment.id}}</h2>
     <h3>Name: {{comment.name}}</h3>
