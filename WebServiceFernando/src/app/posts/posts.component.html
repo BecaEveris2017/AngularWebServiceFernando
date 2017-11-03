@@ -1,7 +1,8 @@
 <h1>Posts</h1>
+<ng-progress></ng-progress>
 <div *ngFor="let post of posts">
-  <h2>{{post.id}}</h2>
-  <h3>{{post.userId}}</h3>
-  <h3>{{post.title}}</h3>
-  <p>{{post.body}}</p>
+  <h2>Id: {{post.id}}</h2>
+  <h3>UserID: {{post.userId}}</h3>
+  <h3>Title: {{post.title}}</h3>
+  <p>Post: {{post.body}}</p>
 </div>

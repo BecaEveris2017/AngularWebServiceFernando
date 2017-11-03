@@ -1,18 +1,32 @@
 <h1>Lista de Users</h1>
-<div *ngFor="let user of users">
-  <h1>{{user.id}}</h1>
-  <h2>{{user.name}}</h2>
-  <h2>{{user.username}}</h2>
-  <h2>{{user.email}}</h2>
-  <h3>{{user.address.street}}</h3>
-  <h3>{{user.address.suite}}</h3>
-  <h3>{{user.address.city}}</h3>
-  <h3>{{user.address.zipcode}}</h3>
-  <h3>{{user.address.geo.lat}}</h3>
-  <h3>{{user.address.geo.Lng}}</h3>
-  <h2>{{user.phone}}</h2>
-  <h2>{{user.website}}</h2>
-  <h3>{{user.company.name}}</h3>
-  <h3>{{user.company.catchPhrase}}</h3>
-  <h3>{{user.company.bs}}</h3>
+<div *ngFor="let user of users" class="users">
+  <h1>UserID: {{user.id}}</h1>
+  <ul>
+    <li><h2>Name: {{user.name}}</h2></li>
+    <li><h2>LastName: {{user.username}}</h2></li>   
+    <li><h2>Email: {{user.email}}</h2></li>   
+    <li><h2>Address:</h2>
+      <ul>
+        <div class="address">
+              <li><h3>Street: {{user.address.street}}</h3></li>
+              <li><h3>Suite: {{user.address.suite}}</h3></li>
+              <li><h3>City: {{user.address.city}}</h3></li>
+              <li><h3>ZipCode: {{user.address.zipcode}}</h3>
+              <li><h3>Geographical:</h3>
+                <ul>
+                  <div class="address">
+                   <li><h3>Latitud: {{user.address.geo.lat}}</h3></li>
+                    <li><h3>Longitud: {{user.address.geo.lng}}</h3></li>
+                  </div>
+                </ul>
+              </li>
+        </div>
+      </ul>
+    </li> 
+    <li><h2>Phone: {{user.phone}}</h2></li>
+    <li><h2>Website: {{user.website}}</h2></li>   
+    <li><h3>Name Company: {{user.company.name}}</h3></li> 
+    <li><h3>CatchPhrase: {{user.company.catchPhrase}}</h3></li>   
+    <li><h3>Bs: {{user.company.bs}}</h3></li>   
+  </ul>
 </div>

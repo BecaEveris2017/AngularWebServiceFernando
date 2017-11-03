@@ -1,0 +1,29 @@
+div{
+    border-style: solid double;
+    padding-left: 10px;
+    border-bottom-style: solid;
+    padding-bottom: 20px;
+}
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+*{
+    margin:0;
+    padding: 0;
+}
+div::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.imagen{
+    float: left;
+    margin-right: 30px;
+    border: 10px solid rgba(255, 0, 0, 0.45);
+}
+.imagen:hover{
+    border: 10px solid rgb(255, 0, 0);
+}
+h1{
+    padding-top: 20px;
+}

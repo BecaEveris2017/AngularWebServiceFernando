@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { PostService} from './post.service';
 
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,7 +10,7 @@ import { PostService} from './post.service';
 export class AppComponent {
   title = 'Beca everis 2017';
   colores=['rojo','negro','azul'];
-  mostrarlistacolores=true;
+  mostrarlistacolores=false;
   nombre:string;
   email:string;
   

@@ -1,0 +1,8 @@
+div.users{
+    border-style: solid double;
+    padding-left: 10px;
+    border-bottom-style: solid;
+}
+div.address{
+    padding-left: 60px;
+}

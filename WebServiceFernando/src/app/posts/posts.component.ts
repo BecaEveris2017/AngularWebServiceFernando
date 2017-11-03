@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PostService } from '../post.service';
+import { NgProgressModule } from 'ngx-progressbar';
+import { Http} from '@angular/http';
 
 @Component({
   selector: 'app-posts',
@@ -11,13 +13,14 @@ export class PostsComponent implements OnInit {
 
   posts:IPost[]; 
   
+  
   constructor(private postService:PostService){
     //console.log();
     postService.getPost().subscribe(
       post=>{
         console.log(post);
       this.posts=post;
-    });
+    })
     
   }
   ngOnInit() {

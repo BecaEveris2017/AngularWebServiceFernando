@@ -9,7 +9,10 @@ import { AlbumsComponent } from './albums/albums.component';
 import { PhotosComponent } from './photos/photos.component';
 import { TodosComponent } from './todos/todos.component';
 import { UsersComponent } from './users/users.component';
-
+import { TabModule } from 'angular-tabs-component';
+import { Ng4LoadingSpinnerModule } from 'ng4-loading-spinner';
+import { NgProgressModule, NgProgressBrowserXhr } from 'ngx-progressbar';
+import { BrowserXhr } from '@angular/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,9 +26,15 @@ import { UsersComponent } from './users/users.component';
   ],
   imports: [
     BrowserModule,
-    HttpModule
+    HttpModule,
+    TabModule,
+    Ng4LoadingSpinnerModule,
+    NgProgressModule
   ],
-  providers: [],
+  providers: [
+    {provide: BrowserXhr,useClass:NgProgressBrowserXhr
+       }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

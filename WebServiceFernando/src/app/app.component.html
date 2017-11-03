@@ -20,16 +20,33 @@
       </li>
   </ul>
 </div>
+<ng-progress></ng-progress>
 <!--
+   -->
+  <tabs>
+        <tab tabTitle="Posts">
+               <ng-progress></ng-progress>
+               <app-posts></app-posts>
+        </tab>
+        <tab tabTitle="Comments">
+            <app-comments></app-comments>
+        </tab>
+        <tab tabTitle="Albums">
+            <ng-progress></ng-progress>
+            <app-albums></app-albums>
+        </tab>
+        <tab tabTitle="Photos">
+          <app-photos></app-photos>
+        </tab>
+        <tab tabTitle="Todos">
+          <app-todos></app-todos>
+        </tab>
+        <tab tabTitle="Users">
+          <app-users></app-users>
+        </tab>
+    </tabs> 
 
-
-
--->
-<app-posts></app-posts>
-<app-albums></app-albums>
-<app-comments></app-comments>
-<app-photos></app-photos>
-<app-todos></app-todos>
-<app-users></app-users>
-<!--
-<app-nuevocomponente></app-nuevocomponente>-->
+    
+     
+     
+    

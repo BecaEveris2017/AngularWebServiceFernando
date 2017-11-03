@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { PostService } from '../post.service';
-
 @Component({
   selector: 'app-albums',
   templateUrl: './albums.component.html',

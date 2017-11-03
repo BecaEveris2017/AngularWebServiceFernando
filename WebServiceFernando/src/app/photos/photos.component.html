@@ -1,8 +1,14 @@
 <h1>Photos</h1>
 <div *ngFor="let photo of photos">
-    <h2>{{photo.albumId}}</h2>
-    <h1>{{photo.id}}</h1>
-    <h3>{{photo.title}}</h3>
-    <h4>{{photo.url}}</h4>
-    <p>{{photo.thumbnailUrl}}</p>
+    <h1>AlbumId: {{photo.albumId}}</h1>
+    <a href="{{photo.url}}" target=_blank>
+        <img src="{{photo.thumbnailUrl}}" alt="{{photo.title}}" class="imagen">
+    </a>
+    <h2>PhotoId: {{photo.id}}</h2>
+    <h3>Title: {{photo.title}}</h3>
+    <h4>Url: {{photo.url}}</h4>
+    <p>thumbnailUrl: {{photo.thumbnailUrl}}</p>
+    <!--
+    <img onclick="javascript:this.width=450;this.height=338" ondblclick="javascript:this.width=100;this.height=80" src="{{photo.url}}" width="100"/>
+    -->
   </div>
